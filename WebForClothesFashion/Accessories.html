@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Accessories</title>
+</head>
+<style type="text/css">
+	.Grid-cell5{
+        flex: 1 1 25%;
+        color: black;
+        font-size: 20px;
+        font-family: Times New Roman;
+        line-height: 55px;
+        text-align: center;
+        cursor: crosshair;
+        overflow: hidden;
+    }
+    .block_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 55px;
+        background-color: #fbfaf5;
+    }
+    td{
+    	height: 400px;
+    	width:300px;
+    	text-align: center;
+    }
+    #block_bottom{
+        margin: 100px 100px 100px;
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px auto;
+        column-rule: 4px solid white;
+        column-rule-style: dotted;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        border: white;
+    }
+</style>
+<body bgcolor="#000000">
+	<div class="block_top">
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Cover.html')">Home Page</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\History.html')">History</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Clothes Style.html')">Clothes Style</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Accessories.html')">Accessories</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Customize.html')">Customize</div>
+    </div>
+	<form>
+		<table border="1"cellpadding="1"style="width: 80%;height: 400px;margin: 0 auto;">
+			<tr>
+				<td ><img src=".\image\13 (1).jpg"style="height: 380px;width:270px;"></td>
+				<td id="introduce1">&nbsp&nbsp暗黑风手链，粗犷的外表下，每一个元素都十分饱满独立，诠释着自我意识的苏醒。
+				</td>
+				<td><img src=".\image\13 (2).jpg"style="height: 380px;width:270px"></td>
+				<td id="introduce2">&nbsp&nbsp极简的搭配元素，对称中饱含沉稳，在非对称中打破平衡，银色的金属光泽微微发散着冷峻的自我审视光芒。
+				</td>
+				<td style="color: white;font-size: 35px;font-family: the new roman;text-align: center;">Bracelets</td>
+			</tr>
+			<tr style="width: 100%;height: 400px;">
+				<td>&nbsp&nbsp运用钉子元素，打破固有结构。以“呼吸纹理”工艺雕琢其轮廓，表面的自然纹理犹如腐朽的斑驳，就像时间悄无声息的，却总能不经意的留下痕迹。</td>
+				<td><img src=".\image\13 (3).jpg"style="height: 380px;width:270px;"></td>
+				<td>&nbsp&nbsp圆润的葡萄石与钉子相互缠绕包裹，柔美与刚韧并存。在罗兰巴特碎片化的文字里，书写的混沌建立了信仰的新秩序，复论关于理性与非理性之间的命题。</td>
+				<td><img src=".\image\13 (4).jpg"style="height: 380px;width:270px;"></td>
+				<td style="color: white;font-size: 35px;font-family: the new roman;text-align: center;">Earrings</td>
+			</tr>
+			<tr style="width: 100%;height: 400px;">
+				<td><img src=".\image\13 (5).jpg"style="height: 380px;width:270px;"></td>
+				<td>&nbsp&nbsp做旧 古朴</td>
+				<td><img src=".\image\13 (6).jpg"style="height: 380px;width:270px;"></td>
+				<td>&nbsp&nbsp意义 铭记</td>
+				<td style="color: white;font-size: 35px;font-family: the new roman;text-align: center;">Rings</td>
+			</tr>
+			<tr style="width: 100%;height: 400px;">
+				<td>&nbsp&nbsp银块的量感给予冷艳的初印象，上身一秒又酷又飒。</td>
+				<td><img src=".\image\13 (7).jpg"style="height: 380px;width:270px;"></td>
+				<td>&nbsp&nbsp刚柔并济的极源星项链与极源链条戒指,兼具浪漫与先锋感。以极星为引，开启探寻极空间之旅，诠释“极”的平衡与对立。</td>
+				<td><img src=".\image\13 (9).jpg"style="height: 380px;width:270px;"></td>
+				<td style="color: white;font-size: 35px;font-family: the new roman;text-align: center;">Necklace</td>
+			</tr>
+		</table>
+	</form>
+	<div id="block_bottom">xxxxx文化传播有限公司</br>关于我们</br>服务体系</br>联系我们</br></div>
+<p style="text-align: center;color: white;">粤ICP备2020109xxx号 xxxxx文化传播有限公司 版权所有</p>
+	<script type="text/javascript">
+		var list = document.querySelectorAll("td");
+	    for (var i = 0; i < list.length; i++) {
+	    	if((i+1)%5!=0){
+    			list[i].onmouseover = function () {
+	            //设置其背景颜色为黄色
+	            this.style.backgroundColor = "yellow";
+	        	};
+	        	list[i].onmouseout = function () {
+	            //设置其背景颜色为黑色
+	            this.style.backgroundColor = "black";
+	        	};
+	    	}
+	    }
+	</script>
+
+</body>
+</html>

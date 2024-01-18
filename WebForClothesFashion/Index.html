@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style type="text/css">
+    .Grid{
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Grid-cellfull{
+        flex: 1 1 68%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Grid-cell2{
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+    .Grid-cell3{
+        flex: 0 0 32%;
+        padding-top: 110px;
+        height: 1000px;
+        align-content:center;
+    }
+    .Grid-cell4{
+        height: 600px;
+        flex: 0 0 33% ;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .Grid-cell4 img{
+        opacity: 1;
+        transition: all 0.6s;
+    }
+    .Grid-cell4 img:hover{
+        opacity: 0.7;
+        transform:scale(1.1);
+    }
+    .Grid-cell5{
+        flex: 1 1 25%;
+        color: black;
+        font-size: 20px;
+        font-family: Times New Roman;
+        line-height: 55px;
+        text-align: center;
+        cursor: crosshair;
+        overflow: hidden;
+    }
+    .Grid-cell6{
+        width: 40px;
+        height: 40px;
+    }
+    #arrow{
+        cursor: crosshair;
+        font-size: 20px;
+        z-index: 100;
+    }
+    .clmarrage{
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: row;
+        padding-top: 110px;
+    }
+    .block_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 55px;
+        background-color: #fbfaf5;
+    }
+    h1{
+        text-align:center;
+        font-size: 65px;
+    }
+    #block_bottom{
+        width: 100%;
+        margin: 100px 100px 20px;
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px auto;
+        column-rule: 4px solid white;
+        column-rule-style: dotted;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        border: white;
+    }
+    .p{
+        font-family: The new Roman;
+    }
+    </style>
+</head>
+<body bgcolor="#000000">
+    <div class="block_top">
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Cover.html')">Home Page</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\History.html')">History</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Clothes Style.html')">Clothes Style</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Accessories.html')">Accessories</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Customize.html')">Customize</div>
+    </div>
+    <div style="flex: 0 0 100%;height: 700px;display: flex;justify-content: space-around;">
+        <img src=".\image\1.png"style="height: 700px;width: 33%;">
+        <img src=".\image\2.png">
+        <img src=".\image\3.png">
+    </div>
+    <div class="Grid">
+        <div class="Grid-cell3">
+            <h1 style="color: white;">The</h1>
+            <h1 style="text-decoration:underline;font-family: times new roman;color: white;">Gender</h1>
+            <h1 style="text-decoration:underline;font-family: times new roman;color: white;">Neutral</h1>
+            <div id="text"style="height: 200px;width: 400px;padding: 50px;font-size: 17px;font-family: Times New Roman;color: white;"></div>
+            <script type="text/javascript">
+                var text="Neutral wind is the perfect balance of femininity and masculinity. Neutral wind completely subverts the traditional concept of male steady, tough, rough masculine beauty, and female elegance, gentleness, light spirit of feminine beauty, the yin and masculine balance the mixture, creating a unique new style. ";
+                var count=0;
+                var interval=setInterval("set()",100);
+                function set(){
+                    if(count>=text.length){
+                        clearInterval(interval);
+                        return false;
+                    }
+                    document.getElementById("text").innerHTML+=text.charAt(count++);
+                }
+            </script>
+        </div>
+
+    <div class="Grid-cellfull">
+        <div class ="clmarrage">
+
+            <div style="flex: 0 0 29.3%;color: white;padding-left: 20px;padding-right: 20px;"> 
+                线条精炼，直线条运用多，分割线规整，造型棱角分明，廓型简洁利落，是中性风服装的主要特点。 中性服装廓形简约，不会有过分夸张的印花。西服、马甲、T恤衫、牛仔裤被认为是中性服装，黑白灰是中性色彩。
+            </div>
+            <div style="flex: 0 0 29.3%;color: white;padding-left: 20px;padding-right: 20px;"> 
+                中性风将男子帅气、洒脱、随意的个性特质与女装优雅、自信的魅力表现相结合，以此打破传统服饰观念，使女装也具有男装稳重、坚毅的特征。中性风的风靡，也预示着女性自我意识的觉醒。
+            </div>
+            <div style="flex: 0 0 29.3%;color: white;padding-left: 20px;padding-right: 20px;"> 
+                配饰设计中，融入了金属配饰、领结、领带等服装配饰。腰包、渔夫帽、皮鞋成为新一轮受追捧的时尚单品。在穿搭时选择性地加入一些中性化元素，能使人达到干净清爽的放松状态。
+            </div>
+        
+        </div>
+
+        <div class="Grid-cell4" style="background-color: #ffffff">
+            <div class="Grid-cell6"id="arrow">
+               <a href="https://www.bilibili.com/video/BV13A411A7RN?share_source=copy_pc">-->video</a>
+            </div>
+            <div style="height:30px;width:100%"></div>
+            <img src=".\image\13.png"style="height: 430px;">
+            <p>History</p>
+        </div>
+        <div class="Grid-cell4" style="background-color: #ffffff">
+            <div class="Grid-cell6"id="arrow">
+               <a href="https://www.bilibili.com/video/BV17J41187fm?share_source=copy_pc">-->video</a>
+            </div>
+            <div style="height:30px;width:100%"></div>
+            <img src=".\image\10.jpg"style="height: 430px;">
+            <p>Clothes Style</p>
+        </div>
+        <div class="Grid-cell4" style="background-color: #ffffff">
+            <div class="Grid-cell6"id="arrow">
+               <a href="https://www.bilibili.com/video/BV1c7411M7Ph?share_source=copy_pc">-->video</a>
+            </div>
+            <div style="height:30px;width:100%"></div>
+            <img src=".\image\13 (7).jpg"style="height: 430px;">
+            <p>Accessories</p>
+        </div>
+    </div>
+    <div id="block_bottom">xxxxx文化传播有限公司</br>关于我们</br>服务体系</br>联系我们</br></div>
+        <p style="text-align:center;color: white;width: 100%;">粤ICP备2020109xxx号 xxxxx文化传播有限公司 版权所有</p>
+</body>
+</html>

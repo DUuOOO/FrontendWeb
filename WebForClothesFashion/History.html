@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>History</title>
+	<style type="text/css">
+	.Grid-cell5{
+        flex: 1 1 25%;
+        color: black;
+        font-size: 20px;
+        font-family: Times New Roman;
+        line-height: 55px;
+        text-align: center;
+        cursor: crosshair;
+        overflow: hidden;
+    }
+    .block_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 55px;
+        background-color: #fbfaf5;
+    }
+    .Grid{
+		display: flex;
+		flex-wrap: wrap;
+	}
+    .Grid-cell1{ /*图片自动切换的容器样式*/
+    	flex: 0 0 24.8%;
+    	height: 310px;
+    	transform:rotateX(20deg) rotateY(-10deg);
+    	box-shadow: 5px 5px 20px grey inset;
+    	border-radius: 25px;
+        overflow: hidden;
+    }
+    .Grid-cell2{/*图片自动切换的容器样式*/
+    	flex: 0 0 24.8%;
+    	height: 310px;	
+    	transform:rotateX(-20deg) rotateY(-10deg);
+    	box-shadow: 5px 5px 20px grey inset;
+    	border-radius: 25px;
+        overflow: hidden;
+    }
+    #Grid-cell3{
+    	display: flex;
+    	flex: 0 0 80%;
+    	flex-wrap: wrap;
+    }
+    .Grid-cell4{
+    	display: flex;
+    	flex: 0 0 9.8%;
+    	flex-direction: column;
+    	flex-wrap: wrap;
+        color: white;
+        background-color: black;
+    	border: 1px solid grey;
+        font-size: 90px;
+        line-height: 280px;
+        cursor: crosshair;
+    }
+    .Grid-cell4:hover{
+        background-color: lightblue;
+    }
+    .Grid-cell6{
+    	flex: 0 0 100%;
+    	height: 520px;	
+        display: flex;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+    .Grid-cell7{
+    	flex: 0 0 21%;
+    	height: 220px;	
+        padding: 50px;
+    }
+    #block_bottom{
+        margin: 100px 100px 100px;
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px auto;
+        column-rule: 4px solid white;
+        column-rule-style: dotted;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        border: white;
+    }
+</style>
+</head>
+<body bgcolor="#000000">
+    <div class="block_top">
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Cover.html')">Home Page</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\History.html')">History</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Clothes Style.html')">Clothes Style</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Accessories.html')">Accessories</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Customize.html')">Customize</div>
+    </div>
+
+
+    <div style="height: 20px;"></div>
+    <div class="Grid">
+    	<button id ="btn1"class="Grid-cell4" onclick="back()">
+    		<
+    	</button>
+        
+    	<div id="Grid-cell3">
+	    	<div class="Grid-cell1"><img id='imgo' src=".\image\111.jpg"style="width: 220px;padding-top: 10px;padding-left: 50px;"> </div>
+	    	<div class="Grid-cell2"><img id='imgp' src=".\image\222.jpg"style="width: 220px;padding-top: 10px;padding-left: 50px;"> </div>
+	    	<div class="Grid-cell1"><img id='imgq' src=".\image\333.jpg"style="width: 220px;padding-top: 10px;padding-left: 50px;"> </div>
+	    	<div class="Grid-cell2"><img id='imgr' src=".\image\444.jpg"style="width: 220px;padding-top: 10px;padding-left: 50px;"> </div>
+    	</div>
+
+    	<button id ="btn2"class="Grid-cell4" onclick="move()" >
+            >
+        </button>     
+    	
+        <div class="Grid-cell6">
+            <div style="flex: 0 0 100%;height: 70px;"><hr></div>
+            <div style="flex: 0 0 50%;">
+            <p style="color:white;padding-left: 50px;padding-right: 50px;padding-top: 80px;">
+                中性风的原型，最早可以追溯到18、19世纪后，横空出世的简约剪裁。此时期的代表为香奈儿女士,利落简约的线条冲击着传统的审美。正是从这个时期开始，服装才由反腐、厚重、奢华向简约、轻便过渡。而真正的中性风大概从2005年开始流行。</br></p>
+            </div>
+            <div style="flex: 0 0 50%;">
+            <img src=".\image\15.png"></div>
+    	</div>
+        
+        <div class="Grid-cell6">
+            <div style="flex: 0 0 40%;justify-content: center;">
+            <img src=".\image\13.png"style="padding-left: 200px;"></div>
+            <div style="flex: 0 0 60%;">
+            <p style="color:white;padding-top: 100px;padding-right: 40px;">
+                中性风服装则打破了性别桎梏，以无性别特征的设计，让服装游离在男女装之间。</br></br>男性可以穿着明媚、柔和的服饰，女性同样可以穿的阳刚、帅气。</br></br>中性风时尚，起源于女权运动。二十世纪初，一些思想前卫的女性开始通过穿着和男性一样的西装、裤装，佩戴男士帽子、拿拐杖，来表现、呼吁女性应该拥有和男性相同的地位，获得相同的社会机会与待遇。除此之外，表现“追求自由的个性”、“挑战权威”也成为了中性风时尚风潮掀起的又一原因。
+            </p></div>
+        </div>
+        <div class="Grid-cell6">
+            <div style="flex: 0 0 40%;justify-content: center;">
+            <img src=".\image\12.png"style="padding-left: 20px;"></div>
+            <div style="flex: 0 0 55%;">
+            <p style="color:white;padding-top: 100px;padding-right: 40px;">
+                女性通过中性风穿着来表现自己的离经叛道的自由精神，男性也通过留长发、穿紧身衣来强调自己自由的灵魂，摇滚乐手就是其中鲜明的例子。</br></br>当下，社会分工已经基本实现了“男女平等”，越来越多的女性在职场上取得不逊于男性的成就和地位，中性服装也成为了部分职场女强人以及追求个性穿着的女性的选择。</br></br>而“韩流”的入侵，也使得中国乃至亚洲市场进入男色时代，外表精致、五官细腻的“小鲜肉”“花美男”成为市场主流，中性风也在男性市场逐渐流行，中性风穿着也成为了一些都市时尚男士追求精致生活的表现。
+            </p></div>
+        </div>
+    </div>
+    <div id="block_bottom">xxxxx文化传播有限公司</br>关于我们</br>服务体系</br>联系我们</br></div>
+<p style="text-align: center;color: white;">粤ICP备2020109xxx号 xxxxx文化传播有限公司 版权所有</p>
+</body>
+<script type="text/javascript">
+    var num = 0;
+    function move(){
+        var oimg1 = document.getElementById("imgo");
+        var oimg2 = document.getElementById("imgp");
+        var oimg3 = document.getElementById("imgq");
+        var oimg4 = document.getElementById("imgr");
+        var imgreplace=[".\\image\\111.jpg",".\\image\\222.jpg",".\\image\\333.jpg",".\\image\\444.jpg",".\\image\\555.jpg",".\\image\\666.jpg",".\\image\\777.jpg"]
+        num -= 1;
+        oimg1.src = imgreplace[((num + 0)%7 + 7) % 7];
+        oimg2.src = imgreplace[((num + 1)%7 + 7) % 7];
+        oimg3.src = imgreplace[((num + 2)%7 + 7) % 7];
+        oimg4.src = imgreplace[((num + 3)%7 + 7) % 7];
+    }
+    function back(){
+        var oimg1 = document.getElementById("imgo");
+        var oimg2 = document.getElementById("imgp");
+        var oimg3 = document.getElementById("imgq");
+        var oimg4 = document.getElementById("imgr");
+        var imgreplace=[".\\image\\111.jpg",".\\image\\222.jpg",".\\image\\333.jpg",".\\image\\444.jpg",".\\image\\555.jpg",".\\image\\666.jpg",".\\image\\777.jpg"]
+        num += 1;
+        oimg1.src = imgreplace[((num + 0)%7 + 7) % 7];
+        oimg2.src = imgreplace[((num + 1)%7 + 7) % 7];
+        oimg3.src = imgreplace[((num + 2)%7 + 7) % 7];
+        oimg4.src = imgreplace[((num + 3)%7 + 7) % 7];
+    }
+</script>
+</html>

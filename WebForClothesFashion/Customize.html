@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Customize</title>
+<script>
+	function showChar() {
+		document.getElementById("char").innerHTML = String.fromCharCode(event.keyCode);
+	}
+</script>
+	<style type="text/css">
+	#Grid{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	.Grid-cell2{
+    	flex: 0 0 36%;
+    	height: 400px;
+    	display: flex;
+    	justify-content: center;
+    }
+    .Grid-cell3{
+    	display: flex;
+    	flex: 1 1%;
+    	flex-wrap: wrap;
+    }
+    #Grid-cell4{
+    	flex: 0 0 13.5%;
+    	display: flex;
+    	flex-wrap: wrap;
+    	height: 200px;
+    	color: white;
+    	margin-top: 100px;
+    	padding-right: 20px;
+    	overflow: hidden;
+    }
+	.Grid-cell5{
+        flex: 1 1 25%;
+        color: black;
+        font-size: 20px;
+        font-family: Times New Roman;
+        line-height: 55px;
+        text-align: center;
+        cursor: crosshair;
+        overflow: hidden;
+    }
+    #block_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 55px;
+        background-color: #fbfaf5;
+    }
+    #block_bottom{
+    	width: 100%;
+    	margin: 100px auto;
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px auto;
+        column-rule: 4px solid white;
+        column-rule-style: dotted;
+        text-align: center;
+        font-size: 15px;
+      	color: white;
+      	border: white;
+    }
+	</style>
+</head>
+<body bgcolor="#000000">
+	<div id="block_top">
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Cover.html')">Home Page</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\History.html')">History</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Clothes Style.html')">Clothes Style</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Accessories.html')">Accessories</div>
+	    <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Customize.html')">Customize</div>
+	</div>
+
+
+	<form>
+		<table border="1" cellpadding="1" style="width: 100%;">
+			<tr>
+				<th><select id="bgcl"style="width: 100%;text-align: center;"onChange="selectbgcl()"onmousedown="judge1()"><option value="#660000">请选择背景颜色</option></select></th>
+			</tr>
+		</table>
+	</form>
+
+<div id="Grid">
+	<div style="width:100%;height: 80px;"></div>
+<div class="Grid-cell2"><img src=".\image\12.png" style="width:90%;height:400px;"></div>
+	<div class="Grid-cell3">
+		<form name="表单" action="表单_ok.jsp" method="post" enctype="multipart/form-data" onSubmit="return check();" style="font-size:17px;color:white;">
+		<em>账号</em>
+		<input type="text" name="number" value=""/><br/>
+		<em>密码</em>
+		<input type="password" name="password" value=""/><br/><br/>
+		<em>请选择定制杂志类型：</em></br>
+		<input type="radio" name="style" value="摄影图册"/>摄影图册
+		<input type="radio" name="style" value="秀场图册"/>秀场图册
+		<input type="radio" name="style" value="配饰推荐订阅"/>配饰推荐订阅
+		<input type="radio" name="style" value="其他穿搭风格介绍"/>其他穿搭风格介绍
+		<br/>
+		<br/><em>
+		包装方式</em><br/>
+		<select name="pack">
+		<option value="泡沫">泡沫</option>
+		<option value="海绵">海绵</option>
+		<option value="盒子">盒子</option>
+		</select>
+		<br/>
+		<br/><em>
+		请提交资料</em><br/>
+		<input type="file" name="file" value=""/>
+		<br/>
+		<br/><em>
+		邮寄地址</em><br/>
+		<textarea  rows="3" cols="87" wrap="physical">
+		</textarea>
+		<br/>
+		<input type="submit" value="提交"/>
+		<input type="reset" value="重置" onclick="return check2();"/>
+		<br/>
+		</form>
+	</div>
+<div id="Grid-cell4">
+		<span>让时尚像风一样吹进你的生活</span><br />
+		<span>有时慢下来 接受一些美的熏陶</span><br />
+		<span>依时而行 最“尚”品质</span><br />
+		<span>复古潮流 千禧风</span><br />
+		<span>让⾃⼰成为别⼈眼中的风景</span><br />
+		<span>优雅永不过时 经典历久弥新</span><br />
+		<span>精诚同心 感恩奉献</span><br />
+		<span>花店不开了花继续开</span><br />
+		<span>做你想做的事 活你想要的模样</span><br />
+		<span>让生活更自信 让工作更专业</span><br />
+		<span>世界包容万象 瞬息千变万化</span><br />
+		<span>尝试不一样的自己</span><br />
+		<span>酸甜苦辣 都能是你</span><br />
+</div>
+
+<script type="text/javascript">
+	var Scroll = new function() {
+		this.delay = 1000; //延迟的时间  
+		this.auto = 40; //延迟的时间  
+		this.height = 20; //行的高度  
+		this.step = 4; //步长  
+		this.curHeight = 0;
+		this.timer = null;
+		this.start = function() {
+			//开始翻页，调用move方法  
+			var self = this;
+			setTimeout(function() {
+				self.move();
+			}, this.delay);
+		}
+
+		this.move = function() {
+			var self = this;
+			if(this.curHeight == this.height)
+			//如果显示完一行  
+			{
+				this.timer = setTimeout(function() {
+					//使用定时器，定时下一行的翻页时间  
+					self.move();
+				}, this.delay);
+				this.curHeight = 0;
+				if(this.element.scrollTop >= this.element.scrollHeight -
+					this.height) {
+					//滚动信息已经完毕  
+					this.stop();
+					setTimeout(function() {
+						self.element.scrollTop = 0;
+						self.start();
+					}, this.delay);
+				}
+				return true;
+			}
+			this.element.scrollTop += this.step;
+			this.curHeight += this.step;
+			this.timer = setTimeout(function() {
+				//设置自动翻页定时器  
+				self.move();
+			}, this.auto);
+		}
+		this.stop = function() {
+			//清除定时期，停止滚动翻页  
+			clearTimeout(this.timer);
+		}
+	}
+</script>
+<script type="text/javascript">
+		Scroll.element = document.getElementById('Grid-cell4');
+		Scroll.start();
+</script>
+</div>
+<div id="block_bottom">xxxxx文化传播有限公司</br>关于我们</br>服务体系</br>联系我们</br></div>
+<p style="text-align: center;color: white;">粤ICP备2020109xxx号 xxxxx文化传播有限公司 版权所有</p>
+</body>
+<script type="text/javascript">
+	var bgclArray = new Array("油绿", "酒红", "湖蓝");
+	var bgcl16 = new Array('#76da91','#660000','#009db2');
+	window.onload=function() {
+			var bgcl = document.getElementById("bgcl");
+			for(var i = 0; i < bgclArray.length; i++) {
+				var option = document.createElement("option");
+				option.value = bgcl16[i];
+				option.text = bgclArray[i];
+				bgcl.options.add(option);
+			}
+		}
+		function judge1(){
+			var opt = document.getElementById("bgcl").value;
+			document.bgColor=opt;
+	}
+		function check(){
+		if (表单.number.value==""){
+		alert("账号不能为空!");
+		return false;
+		}
+		if (表单.password.value==""){
+		alert("密码不能为空!");
+		return false;
+		}
+	}
+	function check2(){
+		if(confirm("您确定要重置吗？")==true){
+			alert("确定重置");
+			return true;
+		}
+		else{
+			alert("取消重置");
+			return false;
+		}
+	}
+</script>
+</html>

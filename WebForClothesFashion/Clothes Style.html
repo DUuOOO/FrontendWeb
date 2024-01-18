@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Clothes Style</title>
+</head>
+<style type="text/css">
+	.Grid-cell5{
+        flex: 1 1 25%;
+        color: black;
+        font-size: 20px;
+        font-family: Times New Roman;
+        line-height: 55px;
+        text-align: center;
+        cursor: crosshair;
+        overflow: hidden;
+    }
+    .block_top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 55px;
+        background-color: #fbfaf5;
+    }
+    .Grid{
+    	display: flex;
+    	flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .Grid-cell2{
+    	flex: 0 0 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .Grid-cell2 img{
+        border-radius: 300px;
+        transition: all 0.7s;
+    }
+    .Grid-cell2 img:hover{
+        border-radius: 0px;
+    }
+    #block_bottom{
+        margin: 100px 100px 100px;
+        column-count: 4;
+        column-gap: 20px;
+        padding: 10px auto;
+        column-rule: 4px solid white;
+        column-rule-style: dotted;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        border: white;
+    }
+</style>
+<body bgcolor="#000000"style="cursor:crosshair;">
+	<div class="block_top">
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Cover.html')">Home Page</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\History.html')">History</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Clothes Style.html')">Clothes Style</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Accessories.html')">Accessories</div>
+        <div class="Grid-cell5" onclick="window.open('..\\Web编程技术-第三次大作业-2021103287-郑燕欣\\Customize.html')">Customize</div>
+    </div>
+    <script type="text/javascript">window.onload(alert("本页将展示其他不同的服装风格，用于感受其与中性风格，即与无性别穿搭之间的差异。"));</script>
+    <div class="Grid">
+        <img src=".\image\3.jpg"style="height: 1000px;width: 750px;">
+        <img src=".\image\4.png"style="height: 1000px;width: 300px;">
+        <img src=".\image\5.png"style="height: 1000px;width: 500px;">
+        <div class="Grid-cell2">
+            <div style="flex: 0 0 49%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 200px;padding-left: 100px;padding-right: 100px;font-size: 30px;">
+                    经典风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 100px;padding-right: 100px;">
+                    经典风格比较保守，讲究穿着品质，追求严谨高雅 ，衣身大多对称，廓型以直筒为主，少用省道与分割线，以蓝色、酒红、白色、浅粉、紫色等沉静高雅的古典色为主。面料多选用传统的精纺面料，花色以传统的彩色、单色面料居多。装饰细节精致，比如局部绣花、领结、领花等。</p>
+            </div>
+            <div style="flex: 0 0 50%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\14.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+            <div style="flex: 0 0 50%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\6.png"style="height: 500px;width: 330px;">
+                <img src=".\image\7.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+            <div style="flex: 0 0 49%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 200px;padding-left: 100px;padding-right: 100px;font-size: 30px;">
+                    淑女风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 100px;padding-right: 100px;">
+                    清新自然、优雅大方是淑女的最大标志，蕾丝与褶边是柔美新淑女风格的两大时尚标志。女性味十足、娇柔可爱，经常借鉴西方宫廷式女装的感觉进行设计，廓型线多用曲线，腰部合体或收紧。部件设计和装饰精致，多使用浅淡色调，如浅粉、粉紫、浅蓝、白色、淡黄等色彩，面料经常使用高支纱的细布、雪纺绸或像丝绸一样柔软的面料。</p>
+            </div>
+
+            <div style="flex: 0 0 22%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\8.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+            <div style="flex: 0 0 22%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 120px;padding-left: 100px;padding-right: 100px;font-size: 30px;">
+                    浪漫风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 70px;padding-right: 70px;">
+                    优美朦胧、柔和轻盈，造型大多精致奇特，局部处理别致细腻，色彩变换扑朔迷离，用料多为柔软透明、飘逸潇洒、悬垂性好的服装材料.</p>
+            </div>
+            <div style="flex: 0 0 24%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\9.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+            <div style="flex: 0 0 28%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 120px;padding-left: 100px;padding-right: 100px;font-size: 30px;">
+                    民族风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 70px;padding-right: 70px;">
+                    民族风格是一个民族在长期的发展中形成本民族的艺术特征，包括民族演出的盛装、日常改良民族服装、含民族元素的服装。服装地域特点鲜明，较少使用分割线，大多工艺特殊，情节感强，色彩多数浓烈、鲜艳，对比较强，经常选用民族特点的面料，针对不同地区、民族使用面料差异性较大，手工装饰较多，多用刺绣、珠片、流苏、嵌条、滚边、印花、编织物等装饰。</p>
+            </div>
+
+            <div style="flex: 0 0 22%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 120px;padding-left: 50px;padding-right: 100px;font-size: 30px;">
+                    街头风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 50px;padding-right: 90px;">
+                    街头服饰一般来说是宽松得近乎夸张的T恤和裤子，另一种典型的服饰是篮球服和运动鞋，也以宽松为标准。</p>
+            </div>
+            <div style="flex: 0 0 22%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\10.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+            <div style="flex: 0 0 24%;height: 600px;color:white;text-align: center;">
+                    <p style="color:white;padding-top: 120px;padding-left: 100px;padding-right: 100px;font-size: 30px;">
+                    中性风格</p>
+                    <p style="color:white;padding-top: 30px;padding-left: 70px;padding-right: 40px;">
+                    中性风，是指形象打扮具有异性的特质，也保留着自身性别的特质，表现出阴阳融合的风格。线条精炼，直线条运用较多，分割线比较规整，造型棱角分明，廓型简洁利落。染发、短发是中性发式，中性在未来的变化将更为活跃。</p>
+            </div>
+            <div style="flex: 0 0 28%;height: 600px;display: flex;flex-direction: column;justify-content: space-around;">
+                <div style="height:50px;width: 100%;"></div>
+                <div style="display: flex;justify-content: space-around;">
+                <img src=".\image\11.png"style="height: 500px;width: 330px;">
+                </div>
+            </div>
+        </div>
+    </div>
+<div id="block_bottom">xxxxx文化传播有限公司</br>关于我们</br>服务体系</br>联系我们</br></div>
+<p style="text-align: center;color: white;">粤ICP备2020109xxx号 xxxxx文化传播有限公司 版权所有</p>
+</body>
+</html>
