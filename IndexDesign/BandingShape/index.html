@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta author="Index:ZYX" content="Seasons">
+	<title>
+		Flowing Seasons Index
+	</title>
+<style type="text/css">
+	.borderin{
+		display: -webkit-flex;
+		background-color: #903749;
+		top:10%;
+		height: 630px;
+		left: 2%;
+		width:88%;
+		border: 3px solid #e7e7eb;
+		position: absolute;
+		z-index: 10;
+		display: flex;
+		justify-content: flex-start;
+		}
+	.top{
+		-webkit-text-stroke: 4px #fef4e8;  
+		font-size: 127px; 
+		font-style: italic;
+		color:#FFF;
+		top: 0;
+		position: fixed;
+		z-index: 100;
+		}
+	.bottom{
+		-webkit-text-stroke: 4px #fef4e8;  
+		font-size: 130px; 
+		color:#FFF;
+		top: 75%;
+		right: 10%;
+		position: fixed;
+		z-index: 100;
+		}
+	.elem1{
+		position: absolute;
+		height: 100%;
+		width:16%;
+		left: 0;
+		overflow: visible;	
+	}
+	.elem1 img{
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 0.9;
+		border: 2px solid black;
+		clip-path:polygon(0 11%,100% 0,100% 89%,0 100%);
+		cursor: pointer;
+		transition: all 0.6s;
+	}
+	.elem1 img:hover{
+		transform: scale(1.4);
+	}
+	.elem2{
+		position: absolute;
+		height: 89%;
+		width: 34%;
+		left: 16.5%;
+		top: 0;
+		bottom: 20%;
+		overflow: visible;	
+	}
+	.elem2 img{
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		border: 2px solid black;
+		cursor: pointer;
+		transition: all 0.6s;
+	}
+	.elem2 img:hover{
+		transform: scale(1.4);
+	}
+	.elem3{
+		position: absolute;
+		top: 0;
+		height: 100%;
+		width: 25%;
+		left: 51%;
+		bottom: 20%;
+		overflow: visible;	
+	}
+	.elem3 img{
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		border: 2px solid black;
+		clip-path:polygon(0 0,100% 11%,100% 100%,0 89%);
+		cursor: pointer;
+		transition: all 0.6s;
+	}
+	.elem3 img:hover{
+		transform: scale(1.4);
+	}
+	.elem4{
+		position: absolute;
+		height: 89%;
+		top: 11%;
+		width: 23.5%;
+		left: 76.5%;
+		overflow: visible;	
+	}
+	.elem4 img{
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		opacity: 0.8;
+		border: 2px solid black;
+		cursor: pointer;
+		transition: all 0.6s;
+	}
+	.elem4 img:hover{
+		transform: scale(1.4);
+	}
+	.btton {
+		padding: 12px;
+		width: 7%;
+		text-align: center;
+		display: table;
+		float: right;
+		position: relative;
+		overflow: hidden;
+		-webkit-transition-duration: 0.4s;
+    	transition-duration: 0.4s;
+    	z-index: 1000;
+	}
+	.btton:hover {
+    background-color: #c8d9eb;
+	}
+	.btton2{
+		width:100%;
+		height: 178px;
+		font-size: 50px;
+		font-family: 楷体;
+		cursor: pointer;
+	}
+	p1{
+		font-size: 14px;
+		text-align: right;
+		line-height: 22px;
+		border-top: 3px solid #8b968d;
+		border-right: 4px solid #8b968d;
+	}
+	#clmarrage{
+		margin-left: 40px;
+		margin-right: 40px;
+		column-count: 5;
+		column-rule: 4px solid white;
+		column-rule-style: dotted;
+		column-gap: 5%;
+	}
+	#clmarrage p{
+		font-size: 12px;
+		line-height: 20px;
+		color: white;
+	}
+	#formtype{
+		margin-left: 40px;
+		margin-right: 40px;
+		height: 90%;
+	}
+	#formtype p{
+		font-size: 17px;
+		line-height: 30px;
+		color: white;
+	}
+</style>
+</head>
+<body bgcolor="#470024">
+<div>
+	<div id="bdout"class="borderin">
+		<p1 style="margin: 0 auto;right: 0;position: absolute;color: #e7e7eb;">
+		春色满园关不住，一枝红杏出墙来。懒摇白羽扇，裸袒青林中。</br>
+		桂魄初生秋露微。夜深知雪重，时闻折竹声。</br>
+		春水满四泽，夏云多奇峰。秋月扬明辉，冬岭秀孤松。
+		</p1>
+	</div>
+	<div class="top"style="font-style: italic;">Flowing Seasons</div>
+	<div class="bottom">Flowing Seasons</div>
+	<div class="btton">
+		<button class="btton2"style="background-color: #80aba9;"onclick="spring()">春</button>
+		<button class="btton2"style="background-color: #5c9291;"onclick="summer()">夏</button>
+		<button class="btton2"style="background-color: #478384;"onclick="autumn()">秋</button>
+		<button class="btton2"style="background-color: #43676b;"onclick="winter()">冬</button>
+		<button class="btton2"style="background-color: #2c4f54;"onclick="submit()">投</br>稿</button>
+	</div>
+	<div style="width:100%;height: 800px;"></div>
+	<div id="clmarrage">
+		<p>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+			</br>
+		</p>
+	</div>
+	<div style="width:100%;height: 600px;">
+		<form id="formtype">
+			<div style="width:100%;height: 50px;"></div>
+			<hr>
+			<p>留言板</p>
+			<input type="text"style="width:100%;height: 187px;"/>
+		<p></p>
+			<input type="submit"value="submit"style="width:55px;height: 30px;float: right;"onclick="alert('SUCCESS!')"/>
+		</form>
+	</div>
+</div>
+<div>
+	<form>
+		
+	</form>
+</div>
+</body>
+<script language="javascript">
+	function init(){
+		for (var i = 1; i < 5; i++) {
+			var div = document.createElement("div"); 
+			div.className = "elem"+i; 
+			div.id='div'+i;
+			var fa = document.getElementById('bdout'); 
+			fa.appendChild(div); 
+			var img=document.createElement("img"); 
+			img.src="图"+i+".jpg";
+			div.appendChild(img);
+		}
+	}
+	function spring(){
+		window.location='../spring/spring.html';
+	}
+	function summer(){
+		window.location='../summer/summer.html';
+	}
+	function autumn(){
+		window.location='../autumn/autumn.html';
+	}
+	function winter(){
+		window.location='../winter/winter.html';
+	}
+	function submit(){
+		window.open('../winter/joinus.html');
+	}
+	init();
+</script>
+</html>
